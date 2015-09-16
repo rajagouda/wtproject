@@ -75,7 +75,10 @@ while($row=mysqli_fetch_array($res))
 	echo '</td>';
 	echo '<td>';
 	echo '<img height="300" width="200" src="http://localhost/akart/images/'.$row['image'].'">';
-
+	echo '</td>';
+	echo '<td>';
+	echo '<a href="http://localhost/akart/page/'.$row['page'].'">View';
+	echo '</td>';
 //	echo '</tr>.<br>';
 	/* $name=$row['pname'];
 	echo $name.'<br>'; */
