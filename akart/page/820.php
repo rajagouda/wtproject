@@ -120,7 +120,8 @@
     </div>
 
     <div id="image" >
-    <h1>HTC Desire 820 16GB</h1> 
+    <h1>HTC Desire 820 16GB</h1>
+    setcookie("820","HTC Desire 820", time()+3600); 
         <img src="../images/spec/820.png">
     </div>
 

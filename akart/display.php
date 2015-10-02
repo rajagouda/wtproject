@@ -117,6 +117,10 @@
 <?php
 error_reporting(0);
 include('connect.php');
+   // if(isset($_POST['search'])){
+   // 	$search=$_POST['search']
+     //$sql="SELECT * FROM mobile WHERE name LIKE '%$search%'";
+   // }	
     if(isset($_POST['NAME_ASC'])){
      $sql="SELECT * FROM mobile ORDER BY name ASC";
     }
