@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+	    <link href="css/reg.css" rel="stylesheet">
+
+    <title>contact us </title>
+    <script language="JavaScript">
+
+function validateForm() {
+    var x = document.forms["myForm"]["fname"].value;
+    if (x == null || x == "") {
+        alert("Name must be filled out");
+        return false;
+    }
+}
+
+    </script>
+
+</head>
+<body class="bod">
+
+
+<form name="myForm" action="register.html" onsubmit="return validateForm()" method="post">
+ <div class="pi">
+<strong>Personal information:</strong>
+<br>
+<br>
+<br>
+<em>First name:</em><br>
+<input type="text" name="firstname" value="" required  maxlength="10" autocomplete="on">
+<br>
+<br>
+<em>Last name:</em><br>
+<input type="text" name="lastname" required  maxlength="10" autocomplete="on">
+<br>
+<br>
+<em>Email ID:</em><br>
+<input type="text" name="mail" value="" required  maxlength="20">
+<br>
+<br>
+<em>Phone no:</em><br>
+<input type="number" name="pno" value="" required  maxlength="10">
+<br>
+<br>
+<em>Password:</em><br>
+<input type="password" name="password" value="" required  maxlength="10">
+<br>
+<br>
+<em>Sex :</em><br>
+<input type="radio" name="sex" value="male" checked>Male
+
+<input type="radio" name="sex" value="female">Female
+<br>
+<br>
+UPLOAD A PHOTO
+<br>
+<input type="file" name="fileupload" accept="image/*" / required>
+
+<h4>Terms and conditions</h4>
+<input type="checkbox" name="AGREE" value="on"> AGREE
+<input type="checkbox" name="Disagree" value="on"> Disagree
+<br>
+<br>
+<input type="submit" value="Submit" name="mySubmit" onClick="openWin()">
+<input type="reset" name="reset"  value="Reset" />
+<input type="button" name="ok" value="OK"  />
+
+ </div>
+</form> 
+</body>
